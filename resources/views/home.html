@@ -1,0 +1,12 @@
+<div id = 'home-cntr' class = 'container'>
+	<div> <span> Shops </span> </div>
+	
+	<div class = 'col-md-3' ng-repeat = 'shop in shops track by $index'>
+		<div> {{ shop.name }} </div>
+		<div ng-if = "1 == shop.type"> Book store</div>
+		<div ng-if = "2 == shop.type"> Library</div>
+		<div ng-if = "3 == shop.type"> Kiosk</div>
+		<div> {{ shop.unique_define }} </div>
+	</div>
+	
+</div>
